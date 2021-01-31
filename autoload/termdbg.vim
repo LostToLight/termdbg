@@ -151,6 +151,8 @@ function termdbg#StartDebug(bang, type, mods, ...) abort
     let config = backend#dlv#Get()
   elseif type ==# 'lldb'
     let config = backend#lldb#Get()
+  elseif type ==# 'jdb'
+    let config = backend#jdb#Get()
   else
     echoerr 'unknown dbg type' type
     return
