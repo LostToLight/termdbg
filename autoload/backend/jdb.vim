@@ -16,13 +16,13 @@ let s:config['locate_pattern'] = {
 let s:config['new_breakpoint_pattern'] = {
       \ 'short': '^Set breakpoint \S+:[0-9,]+',
       \ 'long': '^Set breakpoint (\S+):([0-9,]+)$',
-      \ 'index': [1, 2],
+      \ 'index': [2, 3],
       \ }
 
 let s:config['del_breakpoint_pattern'] = {
       \ 'short': '^Removed: breakpoint \S+:[0-9,]+',
       \ 'long': '^Removed: breakpoint (\S+):([0-9,]+)$',
-      \ 'index': [1, 2],
+      \ 'index': [2, 3],
       \ }
 
 func backend#jdb#Get()
