@@ -5,7 +5,7 @@ Currently, termdbg supports pdb, ipdb, lldb, dlv(go Delve).
 If you need gdb support, try termdebug (`:h termdebug`)
 
 Currently, termdbg just only do these things:
-- locate cursor to current runing line when debugger
+- locate cursor to current running line when debugger
 - simply toggle breakpoints in buffer
 
 ## Install
